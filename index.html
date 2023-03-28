@@ -179,25 +179,63 @@
   
   </section>
 <section id="contact" class="section">
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <center>
-    <div class="separator">
-      <h1 class="w3-xxlarge w3-text-dark-gray"><b>Contact Us</b></h1>
+  <div class="divider">
+    <div class="grad"></div>
+    <div class="title">Contact Me</div>
+    <div class="reverseGrad"></div>
+  </div>
+
+  <div class="section">
+    <br/>
+    <form name="sendmail" target="_blank" method="GET" enctype="text/plain" action="mailto:shelleyk@post.bgu.ac.il">
+      <p class="message">
+        Name:
+      </p>
+      <br/>
+      <input name="Name" type="text">
+      <br/>
+      <br/>
+      <p class="message">
+        Subject:
+      </p>
+      <br/>
+      <input name="Subject" type="text">
+      <br/>
+      <br/>
+      <p class="message">
+        Message: 
+      </p>
+      <br/>
+      <textarea id="Message" name="body" cols="30" rows="10"></textarea>
+      <br/>
+      <br/>
+      <p class="message">
+        Don't forget to add emoji:
+      </p>
+      <br>
+      <div>
+        <select id="emojis" onchange="addemoji()">
+          <option value="&#128151">&#128151</option>
+          <option value="&#128068">&#128068</option>
+          <option value="&#128536">&#128536</option>
+          <option value="&#128519">&#128519</option>
+          <option value="&#128562">&#128562</option>
+          <option value="&#128578">&#128578</option>
+          <option value="&#128588">&#128588</option>
+          <option value="&#129309">&#129309</option>
+        </select>
       </div>
-      <form action="mailto:omertag@post.bgu.ac.il" method="post" enctype="text/plain">
-      <input id="emoji-area" name="Message " type="text" placeholder="Please Leave Your Comment Here" >
-      <button class="w3-button w3-dark-gray w3-section" type="submit">
-        SEND MESSAGE <i class="fa fa-paper-plane"></i>  
-      </button>
+      <br>
+      <br>
+      <input type="submit" value="Send">
+      <input type="reset" value="reset">
+      <br>
+      <br>
+      <br>
     </form>
   </div>
-  </center>
-  <br/>
-  <br/>
-  </section>
+</section>
+</div>
   
 
 
