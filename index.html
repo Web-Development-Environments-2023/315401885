@@ -222,8 +222,7 @@
 </section>
   
 
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="rMvNsUoE"></script>
+
 <script type="text/javascript">
 $(function(){
   $("#nav a").click(function(e){
@@ -237,43 +236,12 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
- <script>
-  $(document).ready(function() {
-   $("#form-message-input").emojioneArea({
-     pickerPosition: "top",
-     tonesStyle:"radio"
-   });
- });
-</script>
-
-<script>
-  let slideIndex = 1;
-   showSlides(slideIndex);
-
-   function plusSlides(n) {
-     showSlides(slideIndex += n);
-   }
-
-   function curSlide(n) {
-     showSlides(slideIndex = n);
-   }
-
-   function showSlides(n) {
-     const slides = document.getElementsByClassName("mySlides");
-     const dots = document.getElementsByClassName("demo");
-     const captionText = document.getElementById("caption");
-     if (n > slides.length) {slideIndex = 1}
-     if (n < 1) {slideIndex = slides.length}
-     for (let i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";
-     }
-     for (i = 0; i < dots.length; i++) {
-       dots[i].className = dots[i].className.replace(" active", "");
-     }
-     slides[slideIndex-1].style.display = "block";
-     dots[slideIndex-1].className += " active";
-     captionText.innerHTML = dots[slideIndex-1].alt;
-   }
-</script>
+ <div id="fb-root"></div>
+ <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="qBxTzcI8"></script>
+ <div id="fb-root"></div>
+ <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="9iXPlrkw"></script>
+ <div id="fb-root"></div>
+ <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="C6qqL8c9"></script>
+ 
 </body>
 </html>
