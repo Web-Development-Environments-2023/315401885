@@ -191,23 +191,34 @@
   <br/>
   <br/>
   <br/>
-  <form class="my-contact" method="POST" action="mailto:shelleyk@post.bgu.ac.il" enctype="text/plain">
-    <label>Name:</label><br>
-    <input id="form-name-input" type="text" name="Name" placeholder="Your Name">
-    <br/>
-    <br/>
-    <label>Mail:</label><br>
-    <input id="form-mail-input" type="text" name="Email" placeholder="Your Mail">
-    <br/>
-    <br/>
-    <label>Message:</label><br>
-    <div id="containerText">
-      <textarea id="form-message-input" placeholder="Your Message" name="Message"></textarea>
+  <form action="mailto:shelleyk@gmail.com" target="_blank" method="GET" enctype="text/plain">
+    Name:<br/>
+    <input type="text" name="name"><br/>
+    E-Mail:<br/>
+    <input type="text" name="email"><br/>
+    Subject:<br>
+    <input type="text" name="subject"><br>
+    Message:<br>
+    <div id="form-message">
+      <textarea name="body" rows="12" cols="35" id="body" placeholder="Tell Mendel about your thoughts..."></textarea>
+      <select id="emojis" onchange="appendEmoji()">
+        <option value="&#128077">&#128077</option>
+        <option value="&#128078">&#128078</option>
+        <option value="&#128151">&#128151</option>
+        <option value="&#128512">&#128512</option>
+        <option value="&#128514">&#128514</option>
+        <option value="&#128517">&#128517</option>
+        <option value="&#128520">&#128520</option>
+        <option value="&#128521">&#128521</option>
+        <option value="&#128523">&#128523</option>
+        <option value="&#128525">&#128525</option>
+        <option value="&#128526">&#128526</option>
+      </select>
     </div>
-    <br/>
-    <br/>
-    <input class="submit-btn" type="submit">
-  </form>
+    <br><br><br>
+    <input class="formBut" type="submit" value="Send">
+    <input class="formBut" type="reset" value="Reset">
+    </form>
 </div>
 </center>
 <br/>
