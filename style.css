@@ -38,15 +38,22 @@ li a:hover
 
 
 }
-.column {
-	width: 25.00%;
-	padding: 10px;
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
   }
-.row::after {
-content: "";
-clear: both;
-display: table;
-}
+  
+.column {
+	flex: 24%;
+	padding: 0 4px;
+	max-width: 25%;
+  }
+  
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+  }
 .separator {
 	display: flex;
 	align-items: center;
