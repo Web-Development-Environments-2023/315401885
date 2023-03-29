@@ -202,6 +202,19 @@
     Message:<br>
     <div id="form-message">
       <textarea name="body" rows="12" cols="35" id="body" placeholder="Write us a message"></textarea>
+      <select id="emojis" onchange="appendEmoji()">
+        <option value="&#128077">&#128077</option>
+        <option value="&#128078">&#128078</option>
+        <option value="&#128151">&#128151</option>
+        <option value="&#128512">&#128512</option>
+        <option value="&#128514">&#128514</option>
+        <option value="&#128517">&#128517</option>
+        <option value="&#128520">&#128520</option>
+        <option value="&#128521">&#128521</option>
+        <option value="&#128523">&#128523</option>
+        <option value="&#128525">&#128525</option>
+        <option value="&#128526">&#128526</option>
+      </select>
     </div>
     <br><br><br>
     <input class="formBut" type="submit" value="Send">
@@ -214,7 +227,14 @@
 </section>
   
 
-
+<script type="text/javascript">
+  function appendEmoji() {
+    var emojis = document.getElementById("emojis");
+    var chosenEmoji = emojis.value;
+    var textBox = document.getElementById("body");
+    textBox.value += chosenEmoji;
+  }
+</script>
 <script type="text/javascript">
 $(function(){
   $("#nav a").click(function(e){
@@ -228,42 +248,5 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
- <script>
-  $(document).ready(function() {
-   $("#form-message-input").emojioneArea({
-     pickerPosition: "top",
-     tonesStyle:"radio"
-   });
- });
-</script>
-<script>
-  let slideIndex = 1;
-   showSlides(slideIndex);
-
-   function plusSlides(n) {
-     showSlides(slideIndex += n);
-   }
-
-   function curSlide(n) {
-     showSlides(slideIndex = n);
-   }
-
-   function showSlides(n) {
-     const slides = document.getElementsByClassName("mySlides");
-     const dots = document.getElementsByClassName("demo");
-     const captionText = document.getElementById("caption");
-     if (n > slides.length) {slideIndex = 1}
-     if (n < 1) {slideIndex = slides.length}
-     for (let i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";
-     }
-     for (i = 0; i < dots.length; i++) {
-       dots[i].className = dots[i].className.replace(" active", "");
-     }
-     slides[slideIndex-1].style.display = "block";
-     dots[slideIndex-1].className += " active";
-     captionText.innerHTML = dots[slideIndex-1].alt;
-   }
-</script>
 </body>
 </html>
